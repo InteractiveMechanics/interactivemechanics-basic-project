@@ -1,4 +1,6 @@
 .DS_Store
 
-/bower_components/
-/css/main.css
+/.sass-cache
+/node_modules
+/bower_components
+/dist
