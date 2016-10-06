@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'css/main.css': '_sass/main.scss'
+                    'dist/css/main.css': '_sass/main.scss'
                 }
             }
         },
@@ -24,10 +24,19 @@ module.exports = function(grunt) {
                 }
             }
         },
-        removelogging: {
+        uglify: {
+            options: {
+                compress: {
+                    drop_console: true
+                }
+            },
             dist: {
-                src:  'js/**/*.js',
-                dest: 'js/dist/**/*.js'
+                files: [{
+                    expand: true,
+                    cwd: 'js',
+                    src: '**/*.js',
+                    dest: 'dist/js'
+                }]
             }
         }
     });
@@ -38,8 +47,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
 
     grunt.loadNpmTasks("grunt-remove-logging");
+    grunt.loadNpmTasks("grunt-contrib-uglify");
     
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('startServer', ['connect', 'watch']);
-    grunt.registerTask('production', ['sass', 'removelogging']);
+    grunt.registerTask('production', ['sass', 'uglify']);
 };

@@ -1,5 +1,5 @@
 # interactivemechanics-basic-project
-A basic project template that we can keep building on for starting new web projects. Right now, this is pretty simple: just a basic structure for working with Sass so we're all on the same page with Grunt for automation.
+A basic project template that we can keep building on for starting new web projects. Right now, this is pretty simple: just a basic structure for working with Sass so we're all on the same page with Grunt for automation. It also automatically installs jQuery and Bootstrap.
 
 ### Instructions
 *  Start your new project by downloading the zipped version.
