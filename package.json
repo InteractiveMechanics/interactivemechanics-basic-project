@@ -1,0 +1,13 @@
+{
+  "name": "BasicProject",
+  "version": "1.0.0",
+  "devDependencies": {
+    "sass": "latest",
+    "grunt": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-remove-logging": "latest"
+  }
+}
