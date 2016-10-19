@@ -45,8 +45,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
-
-    grunt.loadNpmTasks("grunt-remove-logging");
     grunt.loadNpmTasks("grunt-contrib-uglify");
     
     grunt.registerTask('default', ['watch']);
